@@ -11,6 +11,7 @@ public class HomeController {
 	
 	@GetMapping("/get")
 	public String getHome() {
+		//System.out.println;
 		return "Home Controller is Running";
 		
 	}
