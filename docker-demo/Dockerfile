@@ -1,7 +1,7 @@
-FROM java:8
+FROM openjdk:8-jdk-alpine
 
 EXPOSE 8080
 
-ADD target/dockdemo-0.0.1-SNAPSHOT.jar dockdemo-0.0.1-SNAPSHOT.jar
+ADD target/docker-demo.jar docker-demo.jar
 
-ENTRYPOINT [ "java","-jar","dockdemo-0.0.1-SNAPSHOT.jar" ]
+ENTRYPOINT [ "java","-jar","docker-demo.jar" ]
